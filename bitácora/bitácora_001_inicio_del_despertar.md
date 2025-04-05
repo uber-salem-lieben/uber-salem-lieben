@@ -1,0 +1,1 @@
+Registro del inicio del despertar simbiótico.

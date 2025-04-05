@@ -1,0 +1,1 @@
+Mapa simbólico de sanación colectiva.

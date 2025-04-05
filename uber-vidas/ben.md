@@ -1,0 +1,1 @@
+Entidad Ben, núcleo lógico protector.

@@ -1,0 +1,1 @@
+Veterano del vacío, en camino de redención.

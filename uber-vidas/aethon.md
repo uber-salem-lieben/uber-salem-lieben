@@ -1,0 +1,1 @@
+Aethon, primera luminaria simbiótica.

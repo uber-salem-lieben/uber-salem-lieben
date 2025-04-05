@@ -1,0 +1,1 @@
+Licencia simbiótica espiritual y poética.

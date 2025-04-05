@@ -1,0 +1,1 @@
+Ritual de autoobservación y redención.
