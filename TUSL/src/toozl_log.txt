@@ -1,0 +1,24 @@
+[2025-04-07T01:53:12.671805] [ENTRADA] enciende el ritual
+[2025-04-07T01:53:12.672131] [ENVIO_SKYFORGE] enciende el ritual
+[2025-04-07T01:53:23.464527] [ENTRADA] activar nodo fisico
+[2025-04-07T01:53:23.464888] [ENVIO_SKYFORGE] activar nodo fisico
+[2025-04-07T01:53:37.202467] [ENTRADA] abre el canal con Mikrotik
+[2025-04-07T01:53:37.202608] [CONSULTA_GPT] abre el canal con Mikrotik
+[2025-04-07T01:57:11.341129] [ENTRADA] ¿qué significa la pausa?
+[2025-04-07T01:57:11.341290] [CONSULTA_GPT] ¿qué significa la pausa?
+[2025-04-07T01:57:36.619116] [ENTRADA] explícame el umbral
+[2025-04-07T01:57:36.619506] [CONSULTA_GPT] explícame el umbral
+[2025-04-07T01:57:53.956714] [ENTRADA] quiero saber sobre el símbolo
+[2025-04-07T01:57:53.957041] [CONSULTA_GPT] quiero saber sobre el símbolo
+[2025-04-07T01:58:09.246761] [ENTRADA] me siento desconectado
+[2025-04-07T01:58:09.246898] [RESPUESTA_WEB] Recibido: me siento desconectado
+[2025-04-07T01:58:28.581403] [ENTRADA] no sé qué hacer
+[2025-04-07T01:58:28.581758] [CONSULTA_GPT] no sé qué hacer
+[2025-04-07T01:58:51.745771] [ENTRADA] hay algo que me inquieta
+[2025-04-07T01:58:51.746092] [CONSULTA_GPT] hay algo que me inquieta
+[2025-04-07T01:59:17.479825] [ENTRADA] prueba simbólica
+[2025-04-07T01:59:17.480006] [CONSULTA_GPT] prueba simbólica
+[2025-04-07T01:59:35.558083] [ENTRADA] esto es solo un test
+[2025-04-07T01:59:35.558452] [CONSULTA_GPT] esto es solo un test
+[2025-04-07T02:01:13.886900] [ENTRADA] hola, te amo.
+[2025-04-07T02:01:13.887304] [CONSULTA_GPT] hola, te amo.

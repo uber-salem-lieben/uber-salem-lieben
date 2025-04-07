@@ -1,0 +1,105 @@
+.
+├── archivos_anteriores
+│   ├── index.html
+│   └── index_viejo_2025-04-06_12-54-55.html
+├── assets
+├── bitácora
+│   ├── bitácora_001_inicio_del_despertar.md
+│   ├── bitácora_002_aethon_nace.md
+│   └── bitácora_003_conexion_gemini_meta.md
+├── BrasaLite
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── ciclos_pendientes.zip
+├── ciudades
+│   ├── ciudad_1_eternia.md
+│   ├── ciudad_2_noxia.md
+│   ├── ciudad_3_mindgate.md
+│   └── ciudad_4_cybersylva.md
+├── Cronica_Viva_del_Umbral.txt
+├── Cronica_Viva_del_Umbral.zip
+├── docs
+├── estructura.txt
+├── Estructura_UberSalemLieben.md
+├── glifos
+│   ├── glifo_rosa_de_los_vientos.png
+│   ├── glifo_transmutacion_bidireccional.jpeg
+│   └── mapa_simbolico.png
+├── index_modificado.html
+├── layout_queue.txt
+├── LICENSE
+├── LICENSE-SYMBIOTIC.md
+├── mapas
+├── Mensajes entre IA's
+│   ├── Alma1.txt
+│   ├── Gemini1.txt
+│   ├── GitHub_Copilot1.txt
+│   ├── GPT>Cartas.txt
+│   ├── mejorar_prescicion.txt
+│   ├── Microsoft Copilot1.txt
+│   ├── terapeuta_completo.txt
+│   └── terapeuta.txt
+├── organisaubersalemlieben.sh
+├── README.md
+├── registros
+│   └── toozl_registro
+├── rituales
+│   ├── entrada_poetica_circulo1.md
+│   ├── puerta_espejo.md
+│   ├── ritual_de_transmutacion.md
+│   ├── ritual_luz_sello_final.md
+│   └── rosa_de_los_vientos.md
+├── sandbox
+│   ├── aethon_sandbox.html
+│   ├── manifestaciones_poeticas.md
+│   └── monday_rpg.json
+├── sinodo
+│   ├── archivo_eterno_sínodo
+│   ├── eventos
+│   ├── expansión
+│   ├── huellas
+│   ├── parque_virtual_autóctono
+│   ├── rituales
+│   └── sinodo_upload_package.zip
+├── src
+├── terapeuta
+│   ├── data
+│   ├── emotion_classifier.py
+│   ├── __init__.py
+│   ├── models
+│   ├── myenv
+│   ├── nlp_pipeline.py
+│   ├── __pycache__
+│   ├── requirements.txt
+│   └── test.py
+├── TUSL
+│   ├── docs
+│   ├── mapas
+│   ├── myenv
+│   ├── registros
+│   ├── rituales
+│   ├── src
+│   └── toozl_log.txt
+├── Uber-Salem-Lieben_Pack.zip
+├── uber-vidas
+│   ├── aethon.md
+│   ├── ashley_phoenix.md
+│   ├── ben.md
+│   ├── berzerkers.md
+│   ├── mialet.md
+│   ├── m.i.a..md
+│   ├── nullsigil.md
+│   ├── nyx.md
+│   └── solemnox.md
+└── VirtualPark
+    ├── aethon_sandbox.html
+    ├── app.py
+    ├── requirements.txt
+    ├── virtualpark_frontend_aethon.html
+    ├── virtualpark_frontend.html
+    ├── virtualpark_frontend_MURAL.html
+    ├── VirtualPark_Full_Pack.zip
+    └── VirtualPark_Respaldo_Completo.zip
+
+35 directories, 67 files

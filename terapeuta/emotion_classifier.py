@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+import sys
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -7,16 +9,19 @@ from sklearn.metrics import accuracy_score
 import nltk
 from nlp_pipeline import preprocess_text  # Asegúrate de que esto esté al principio del archivo
 
+# Verificar la versión de Python
+if sys.version_info < (3, 6):
+    print("Este script requiere Python 3.6 o superior.")
+    sys.exit(1)
+
 # Descargar stopwords si es necesario
 nltk.download('stopwords')
 
 # Cargar el dataset (asegúrate de tener el archivo CSV en la ruta correcta)
 def load_data(file_path):
     data = pd.read_csv(file_path)
-    
     # Renombrar las columnas para que coincidan con lo esperado
-    data.rename(columns={'content': 'text', 'sentiment': 'emotion'}, inplace=True)
-    
+    data.rename(columns={'text': 'text', 'sentiment': 'emotion'}, inplace=True)
     return data
 
 # Preprocesar los datos
@@ -61,12 +66,12 @@ def predict(model, vectorizer, text):
 def evaluate_model(model, X_test_vec, y_test):
     y_pred = model.predict(X_test_vec)
     accuracy = accuracy_score(y_test, y_pred)
-    print(f'Accuracy: {accuracy * 100:.2f}%')
+    print('Accuracy: {:.2f}%'.format(accuracy * 100))
 
 # Main function to run the pipeline
 def main():
     # Cargar datos
-    data = load_data('data/emotion_data.csv')  # Asegúrate de que la ruta sea correcta
+    data = load_data('/home/jimsow/Downloads/ubersalemlieben/terapeuta/data/cleaned_tweet_emotions.csv')  # Ruta al archivo limpio
     data = preprocess_data(data)
     
     # Dividir en entrenamiento y prueba
@@ -82,9 +87,11 @@ def main():
     evaluate_model(model, X_test_vec, y_test)
     
     # Predicción en tiempo real
+    vectorizer = TfidfVectorizer(stop_words='english')
+    vectorizer.fit(X_train)  # Ajustar el vectorizador con los datos de entrenamiento
     sample_text = "I'm so happy today!"
-    prediction = predict(model, TfidfVectorizer(), sample_text)
-    print(f"Predicted emotion: {prediction}")
+    prediction = predict(model, vectorizer, sample_text)
+    print("Predicted emotion: {}".format(prediction))
 
 if __name__ == '__main__':
     main()

@@ -1,33 +1,33 @@
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 import spacy
+import re
+import nltk
+from nltk.corpus import stopwords
 
-# Descargar solo las stopwords una vez para evitar múltiples descargas
-nltk.download('punkt')
-
-# Cargar las stopwords en inglés
-stop_words = set(stopwords.words('english'))
-
-def preprocess_text(text):
-    """Preprocesa el texto: tokenización y eliminación de stopwords."""
-    tokens = word_tokenize(text)  # Tokeniza el texto en palabras
-    tokens = [token for token in tokens if token.isalpha()]  # Elimina puntuación
-    tokens = [token for token in tokens if token.lower() not in stop_words]  # Elimina stopwords
-    return ' '.join(tokens)  # Devuelve el texto procesado
+nltk.download('stopwords', quiet=True)  # Descargar stopwords silenciosamente
 
 def create_nlp_pipeline():
-    """Crea el pipeline de NLP con spaCy."""
-    nlp = spacy.load('en_core_web_sm')  # Carga el modelo de spaCy para procesamiento
+    nlp = spacy.load('en_core_web_sm')
     return nlp
 
-nlp = create_nlp_pipeline()  # Inicializa el pipeline de NLP
+def preprocess_text(text):
+    """
+    Preprocesa el texto para limpieza y normalización.
+    """
+    if not isinstance(text, str):
+        return ""  # Manejar casos donde la entrada no es una cadena
 
-# Ejemplo de uso del pipeline
-sample_text = "The quick brown fox jumped over the lazy dog!"
-processed_text = preprocess_text(sample_text)
-doc = nlp(processed_text)
-
-print(f"Texto original: {sample_text}")
-print(f"Texto procesado: {processed_text}")
-
+    # Convertir a minúsculas
+    text = text.lower()
+    # Eliminar URLs
+    text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
+    # Eliminar menciones y hashtags
+    text = re.sub(r'@\w+|#\w+', '', text)
+    # Eliminar caracteres especiales y números
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    # Tokenización
+    tokens = text.split()
+    # Eliminar stopwords
+    stop_words = set(stopwords.words('english'))
+    tokens = [token for token in tokens if token not in stop_words]
+    # Unir tokens de nuevo en una cadena
+    return " ".join(tokens)

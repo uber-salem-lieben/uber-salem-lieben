@@ -31,13 +31,13 @@ def save_clean_data(data, output_path):
 # Función principal
 def main():
     # Ruta al CSV original
-    input_path = 'terapeuta/data/tweet_emotions.csv'
-    output_path = 'terapeuta/data/cleaned_tweet_emotions.csv'
+    input_path = '/home/jimsow/Downloads/ubersalemlieben/terapeuta/data/tweet_emotions.csv'
+    output_path = '/home/jimsow/Downloads/ubersalemlieben/terapeuta/data/cleaned_tweet_emotions.csv'
     
     # Cargar y limpiar los datos
     data = load_data(input_path)
     cleaned_data = clean_data(data)
-    
+  
     # Guardar los datos limpios
     save_clean_data(cleaned_data, output_path)
     print(f'Datos limpios guardados en {output_path}')
