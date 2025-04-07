@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Brasa que Escucha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="brasa-activador">🔥</div>
+  <div id="brasa-panel" class="oculto">
+    <div id="brasa-header">
+      <h2>La Brasa que Escucha</h2>
+      <p>¿Cómo anda tu energía hoy?</p>
+    </div>
+    <div id="brasa-opciones">
+      <button onclick="activarBrasa('cansado')">Cansado</button>
+      <button onclick="activarBrasa('confundido')">Confundido</button>
+      <button onclick="activarBrasa('curioso')">Curioso</button>
+      <button onclick="activarBrasa('triste')">Triste</button>
+      <button onclick="activarBrasa('no_se')">No lo sé</button>
+    </div>
+    <div id="brasa-respuesta" class="oculto"></div>
+    <div id="brasa-token" class="oculto"></div>
+    <div id="brasa-controles">
+      <button onclick="cerrarBrasa()">Cerrar por ahora</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
